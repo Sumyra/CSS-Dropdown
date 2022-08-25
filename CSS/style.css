@@ -1,0 +1,334 @@
+
+
+*{
+ margin:0 ;
+ padding: 0;
+ box-sizing: border-box;
+}
+a{
+    text-decoration: none;}
+ ul,ol{
+    list-style:none; }
+   
+    /* NAVBAR STARTS HERE */
+    nav{
+        background-color: rgb(209, 235, 216);
+        color:black;
+        margin:0 auto ;
+    width: 650px;;
+    font-family:arial ; }
+    nav ul li{
+        display: inline-block;
+
+    }
+    nav ul li a{
+        color:black;
+        display: block;
+        padding: 15px 25px;
+        transition: 0.3s;
+        position: relative;
+        z-index: 1 ;
+    }
+   
+nav ul li ul{
+    position: absolute;
+    background-color: rgb(201, 221, 135);
+    color: #ccc;
+    width: 150px;
+    font-family: amaranth;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: -15px;
+}
+
+nav ul li ul li{
+    display:block;
+    margin: bottom 10px; 
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li a::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: rgb(96, 216, 176); 
+    position: absolute;
+left: 0;
+ bottom: 0;
+    z-index:-1 ;
+    transition: 0.5s;
+}
+    nav ul li:hover >a::before{
+width: 100%;
+    }
+    nav ul li:hover > a::before,
+    nav ul li:hover > a::after{
+        width: 100%;
+    }
+nav ul li ul li a::before,
+nav ul li ul li a::after{
+    display: none;
+}
+nav ul li ul li:hover > a{
+    background-color: rgb(217, 153, 119);
+}
+nav ul li ul li ul{
+    left:100% ;
+    bottom: -25px; ;
+    background-color:rosybrown ;}
+    nav ul li ul li ul li ul {
+        background-color: rgb(220, 109, 109);
+    }
+  
+.card{
+    background-color: #ccc;
+    width: 300px;
+    margin: 25px;
+    display: inline-block;
+}
+.card img{
+    width:100% ;
+}
+.card p{
+    padding: 10px 20px;
+    margin:0 ;
+}
+.card h2{
+    padding: 0px 20px;
+}
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   a{
+       text-decoration: none;}
+    ul,ol{
+       list-style:none; }
+      
+       /* NAVBAR STARTS HERE */
+       #drop{
+          /* background-color: rgb(209, 235, 216);
+           color:black;*/
+           background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           margin:0 auto ;
+       width: 650px;;
+       font-family:arial ; }
+       #drop ul li{
+        display: inline-block;}
+       #drop ul li a{
+            color:#ccc;
+            display: block;
+            padding: 15px 25px;
+            position: relative;
+            z-index: 1 ;
+        }
+        #drop ul li ul{
+                position: absolute;
+                background-color: rgb(9, 4, 58);
+                color: black;
+                width: 150px;
+                font-family: roboto;
+                transition: 0.5s;
+                margin-bottom: 18px;
+                opacity: 0;
+                visibility: hidden;
+            }
+     #drop ul li ul li{
+                display:block;
+                margin: bottom 10px; 
+            }
+      #drop ul li:hover > ul{
+                opacity: 1;
+                visibility: visible;}
+
+       #drop ul li a::before{
+   
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: rgb(103, 210, 234); 
+            position: absolute;
+        left: 0;
+         bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+       }
+      #drop ul li:hover >a::before,
+      #drop ul li:hover >a::after{
+        width: 100%;}  
+        
+       #drop ul li a::after{
+   
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: rgb(105, 207, 230); 
+        position: absolute;
+    right: 0;
+     top: 0;
+        z-index: -1;
+        transition: 0.5s;
+   }
+   #drop ul li ul li a::before,
+#drop ul li ul li a::after{
+    display: none;}
+    #drop ul li ul li:hover > a{
+        background-color: rgb(5, 73, 88);
+    }
+    #drop ul li ul li ul{
+        left:100% ;
+        bottom: -30px; ;
+        background-color:rgb(15, 10, 159) ;}
+        #drop ul li ul li ul li ul {
+            background-color: rgb(9, 78, 161);
+        }
+        .card2{
+     
+        width:350px;
+        padding: 20px;
+        margin: 50px 15px;
+        display: inline-block;
+        background: #FFA17F;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #00223E, #FFA17F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #00223E, #FFA17F);
+        border-radius:45px 45px  45px 0 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .card3{
+     
+        width:350px;
+        padding: 20px;
+        margin: 50px 15px;
+        display: inline-block;
+        background: #73C8A9;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #373B44, #73C8A9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #373B44, #73C8A9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius :80px;
+        
+        border-radius:45px 45px  45px 0 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .card2 a{
+        background-color:rgba(255, 255, 255, 0.435); 
+        color:rgb(4, 4, 85); 
+        
+        text-decoration: none;
+        padding:15px 10px ;
+        border-radius:5px ;
+        font-size: 15px;
+    transition: 500ms;
+        display: inline-block;
+      }
+      .card3 a{
+        
+            background-color:rgba(255, 255, 255, 0.653); 
+            color:rgb(4, 4, 85); 
+            
+            text-decoration: none;
+            padding:15px 10px ;
+            border-radius:5px ;
+            font-size: 15px;
+        transition: 500ms;
+            display: inline-block;
+          }
+          *{
+            margin:0 ;
+            padding: 0;
+            box-sizing: border-box;
+           }
+           a{
+               text-decoration: none;}
+            ul,ol{
+               list-style:none; }
+              
+               /* NAVBAR STARTS HERE */
+               #drop3{
+                  /* background-color: rgb(209, 235, 216);
+                   color:black;*/
+                   background: #20002c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ margin:0 auto ;
+               width: 650px;;
+               font-family:arial ; }
+               #drop3 ul li{
+                display: inline-block;}
+               #drop3 ul li a{
+                    color:rgb(0, 0, 0);
+                    display: block;
+                    padding: 15px 25px;
+                    position: relative;
+                    z-index: 1 ;
+                }
+                #drop3 ul li ul{
+                        position: absolute;
+                        background-color: rgb(160, 88, 180);
+                        color: black;
+                        width: 150px;
+                        font-family: roboto;
+                        transition: 0.5s;
+                        margin-bottom: 18px;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+             #drop3 ul li ul li{
+                        display:block;
+                        margin: bottom 10px; 
+                    }
+              #drop3 ul li:hover > ul{
+                        opacity: 1;
+                        visibility: visible;}
+        
+               #drop3 ul li a::before{
+           
+                    content: "";
+                    
+                  height: 47px;
+                    background-color:  rgb(203, 28, 222);   
+                    position: absolute;
+                    border-radius :20px; 
+                 
+                  left:0%;
+                  
+                   z-index: -1;
+                    transition: 0.5s;
+               }
+              #drop3 ul li:hover >a::before,
+              #drop3 ul li:hover >a::after{
+                width: 100%;
+               
+            }  
+                
+              #drop3 ul li a::after{
+           
+                content: "";
+                width: 0;
+                height: 36px;
+                background-color:  rgba(203, 28, 222, 0.643); 
+                position: absolute;
+                right: 0%;
+                border-radius :20px;
+             z-index: -1;
+                transition: 0.5s;
+           }
+           #drop3 ul li ul li a::before,
+        #drop3 ul li ul li a::after{
+            display: none;}
+            #drop3 ul li ul li:hover > a{
+                background-color: rgb(190, 26, 182);
+            }
+            #drop3 ul li ul li ul{
+                left:100% ;
+                bottom: -30px; ;
+                background-color:rgb(181, 148, 201) ;}
+                #drop3 ul li ul li ul li ul {
+                    background-color: rgb(238, 204, 239);
+                }
+        
